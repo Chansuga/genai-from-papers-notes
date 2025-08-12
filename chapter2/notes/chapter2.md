@@ -29,12 +29,12 @@
 
     例）$\nu = \{ 物理学, 数学, 人文学, 社会学 \}$ の場合
 
-    ```math
-    l_{物理学}=\begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} , \quad
-    l_{数学}=\begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} , \quad
-    l_{人文学}=\begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} , \quad
-    l_{社会学}=\begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
-    ```
+```math
+l_{物理学}=\begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix} , \quad
+l_{数学}=\begin{pmatrix} 0 \\ 1 \\ 0 \\ 0 \end{pmatrix} , \quad
+l_{人文学}=\begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix} , \quad
+l_{社会学}=\begin{pmatrix} 0 \\ 0 \\ 0 \\ 1 \end{pmatrix}
+```
 
 - 局所表現はベクトルとなるため、線形変換や関数の適用をすることで
   機械学習モデルで扱うことが可能になる
@@ -47,12 +47,12 @@
 
     例）トークンの情報を表すのに必要な次元が  $\mathbb{R}^{log_2{|\nu|}}$ であると仮定した場合、以下のような分散表現が考えられる
 
-    ```math
-    d_{物理学}=\begin{pmatrix} 0.7 \\ 0.3  \end{pmatrix} , \quad
-    d_{数学}=\begin{pmatrix} 0.8 \\ 0.2  \end{pmatrix} , \quad
-    d_{人文学}=\begin{pmatrix} 0.1 \\ 0.9  \end{pmatrix} , \quad
-    d_{社会学}=\begin{pmatrix} -0.1 \\ 0.8  \end{pmatrix}
-    ```
+```math
+d_{物理学}=\begin{pmatrix} 0.7 \\ 0.3  \end{pmatrix} , \quad
+d_{数学}=\begin{pmatrix} 0.8 \\ 0.2  \end{pmatrix} , \quad
+d_{人文学}=\begin{pmatrix} 0.1 \\ 0.9  \end{pmatrix} , \quad
+d_{社会学}=\begin{pmatrix} -0.1 \\ 0.8  \end{pmatrix}
+```
 
 - 分散表現は局所表現と異なり、小さい次元でトークンの情報を扱え、トークン間の類似性や関係性などを表現しやすくなる
 - トークンを文産業減として扱える特徴量に変換する操作を**埋め込み**と呼ぶ
