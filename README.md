@@ -1,4 +1,7 @@
+
 # 「原論文から解き明かす生成AI」学習管理リポジトリ
+
+📚 [書籍公式GitHubサポートページ](https://github.com/yoheikikuta/support-genAI-book)
 
 <img src=".github/assets/cover.jpg" alt="書籍カバー" width="300">
 
