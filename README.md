@@ -109,3 +109,37 @@
 ### Appendix
 A.1　参考文献の取り扱い  
 A.2　Landauのビッグオー記法と計算量
+
+---
+
+## このリポジトリの使い方
+
+本リポジトリでは、**各セクションごとにブランチを作成して作業**を行うようにしてください。
+
+### 例：2.1のノートを記録する場合
+
+1. 最初に必ずブランチを作成して移動  
+   ```sh
+   git checkout -b chapter2/section1
+   ```
+2. ノートやコードを記録し、都度コミット・リモートリポジトリのブランチにpush  
+   ```sh
+   git add chapter2/notes/2.1.md
+   git commit -m "Add notes for section 2.1"
+   git push origin chapter2/section1
+   ```
+3. 作業が完了したら、リモートにpushし、Pull Request（PR）を作成
+4. 別の作業者が内容を確認し、問題なければ承認してメインブランチにマージ
+5．プルリクエストが承認されたら、ブランチを削除
+   ```sh
+   git checkout main
+   git branch -d chapter2/section1
+   git push origin --delete chapter2/section1
+   ```
+
+この流れを**各セクションごとに繰り返します**。
+
+> **ルール**  
+> - 必ず、作業対象の章・節以外のMarkdownファイルは編集しないでください（コンフリクト防止のため）。
+> - ノートを取る際のブランチ名は、`chapter<章番号>/section<節番号>`の形式で作成してください。
+> - ノート以外でファイルを追加・編集する場合のブランチ名は、`change/<変更対象>`の形式で作成してください。
