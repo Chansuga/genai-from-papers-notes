@@ -1,4 +1,7 @@
+
 # 「原論文から解き明かす生成AI」学習管理リポジトリ
+
+📚 [書籍公式GitHubサポートページ](https://github.com/yoheikikuta/support-genAI-book)
 
 <img src=".github/assets/cover.jpg" alt="書籍カバー" width="300">
 
@@ -44,64 +47,64 @@
 1.3　本書における数式記法  
 
 ### 第2章　入力データの特徴量化
-2.1　埋め込みと分布仮説  
-2.2　サブワードの必要性とトークン化  
-2.3　バイト対符号化 (Byte Pair Encoding)  
-2.4　サブワードユニグラム言語モデル  
-2.5　SentencePiece  
-2.6　文字単位よりも細かいサブワード分割  
-2.7　トークナイザーは本当に必要なのか  
+2.1　[埋め込みと分布仮説](./chapter2/notes/2.1.md)  
+2.2　[サブワードの必要性とトークン化](./chapter2/notes/2.2.md)  
+2.3　[バイト対符号化 (Byte Pair Encoding)](./chapter2/notes/2.3.md)  
+2.4　[サブワードユニグラム言語モデル](./chapter2/notes/2.4.md)  
+2.5　[SentencePiece](./chapter2/notes/2.5.md)  
+2.6　[文字単位よりも細かいサブワード分割](./chapter2/notes/2.6.md)  
+2.7　[トークナイザーは本当に必要なのか](./chapter2/notes/2.7.md)  
 
 ### 第3章　生成AIモデルの大前提となるTransformer
-3.1　Transformer の全体像  
-3.2　位置埋め込み (Positional Encoding)  
-3.3　マルチヘッド注意  
+3.1　[Transformer の全体像](./chapter3/notes/3.1.md)  
+3.2　[位置埋め込み (Positional Encoding)](./chapter3/notes/3.2.md)  
+3.3　[マルチヘッド注意](./chapter3/notes/3.3.md)  
 3.3.1　注意機構 (Attention Mechanism)  
 3.3.2　クエリー・キー・バリューを用いた定式化  
 3.3.3　スケール化内積注意 (Scaled Dot-Product Attention)  
 3.3.4　マルチヘッド注意（Multi-Head Attention）  
 3.3.5　自己注意は何が優れているのか  
-3.4　エンコーダーとデコーダーの共通要素  
-3.5　デコーダーの出力部分  
-3.6　モデルの学習と実験結果  
+3.4　[エンコーダーとデコーダーの共通要素](./chapter3/notes/3.4.md)  
+3.5　[デコーダーの出力部分](./chapter3/notes/3.5.md)  
+3.6　[モデルの学習と実験結果](./chapter3/notes/3.6.md)  
 
 ### 第4章　Generative Pre-trained Transformerとテキスト生成
-4.1　複数タスクモデルとしての GPT-1, 2  
+4.1　[複数タスクモデルとしての GPT-1, 2](./chapter4/notes/4.1.md)  
 4.1.1　GPT-1  
 4.1.2　GPT-2  
-4.2　生成モデルとしての GPT-3, 4  
+4.2　[生成モデルとしての GPT-3, 4](./chapter4/notes/4.2.md)  
 4.2.1　GPT-3  
 4.2.2　GPT-4  
-4.3　テキスト生成モデルの性能を高めるための要素  
+4.3　[テキスト生成モデルの性能を高めるための要素](./chapter4/notes/4.3.md)  
 4.3.1　学習の新たなパラダイムとなる文脈内学習  
 4.3.2　Reinforcement Learning from Human Feedback  
 
 ### 第5章　拡散モデルと画像生成
-5.1　画像分類モデルとしての Vision Transformer  
-5.2　拡散モデル  
+5.1　[画像分類モデルとしての Vision Transformer](./chapter5/notes/5.1.md)  
+5.2　[拡散モデル](./chapter5/notes/5.2.md)  
 5.2.1　拡散過程と逆拡散過程が同じ関数形で表現できる理由  
 5.2.2　Denoising Diffusion Probabilistic Models (DDPM)  
-5.3　画像生成モデル Diffusion Transformer  
+5.3　[画像生成モデル Diffusion Transformer](./chapter5/notes/5.3.md)  
 
 ### 第6章　テキストと画像の融合
-6.1　テキストと画像の特徴量を関係づけるCLIP  
-6.2　text-to-imageモデル unCLIP  
-6.3　text+image-to-imageモデル Imagic  
-6.4　text+image-to-text の実現方法  
+6.1　[テキストと画像の特徴量を関係づけるCLIP](./chapter6/notes/6.1.md)  
+6.2　[text-to-imageモデル unCLIP](./chapter6/notes/6.2.md)  
+6.3　[text+image-to-imageモデル Imagic](./chapter6/notes/6.3.md)  
+6.4　[text+image-to-text の実現方法](./chapter6/notes/6.4.md)  
 
 ### 第7章　生成 AI モデルのスケーリング則
-7.1　生成AIモデルの事前学習スケーリング則  
+7.1　[生成AIモデルの事前学習スケーリング則](./chapter7/notes/7.1.md)  
 7.1.1　テキスト生成モデルの事前学習のスケーリング則  
 7.1.2　様々なモデルや領域における事前学習のスケーリング則  
 7.1.3　テキスト生成モデルの学習データ量の限界  
-7.2　テキスト生成の推論スケーリング則  
+7.2　[テキスト生成の推論スケーリング則](./chapter7/notes/7.2.md)  
 7.2.1　DeepSeek-V3  
 7.2.2　思考の連鎖 (Chain-of-Thought)  
 7.2.3　DeepSeek-R1  
 
 ### 第8章　生成 AI モデルの評価
-8.1　人間による相対評価  
-8.2　高い専門性を有するタスクでの評価  
+8.1　[人間による相対評価](./chapter8/notes/8.1.md)  
+8.2　[高い専門性を有するタスクでの評価](./chapter8/notes/8.2.md)  
 
 ### Appendix
 A.1　参考文献の取り扱い  
